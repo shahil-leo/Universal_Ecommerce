@@ -1,0 +1,25 @@
+:root {
+  --primary: #2a93fc;
+  --warning: #ffac08;
+  --success: #0dbb81;
+  --danger: #F64E60;
+  --secondary: #80939c;
+
+  --primary-dark: #0695d8;
+  --warning-dark: #cc3813;
+  --success-dark: #06a872;
+  --danger-dark: #ee2046;
+  --secondary-dark: #70828a;
+
+  --primary-light: #c4ecff;
+  --warning-light: #ffe4d1;
+  --success-light: #d1fff0;
+  --danger-light: #ffcbcb;
+
+
+  --main-color: var(--primary);
+  --main-dark: var(--primary-dark);
+  --main-light: var(--primary-light);
+
+  --icon-color: #8790a5;
+}

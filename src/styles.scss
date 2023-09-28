@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+// import files for the custom css files
+@import '../src/assets/Css/colors.scss';
+@import '../src/assets/Css/variables.scss';
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+*{
+ margin: 0px;
+ padding: 0px;
+ font-family: 'Poppins', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+//* we are adding the box-sizing understand that once we add 200px width then padding and other things will go inside that not outside the box or it will not increase the size of the box if you don't understand ready the documentation
+ *,* *::before *::after { box-sizing: border-box; }
+
+
+
+
+.btn-success{
+  background-color: rgb(41, 129, 41);
+}
+
+body {
+  font-family: var(--font-family);
+}
