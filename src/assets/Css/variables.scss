@@ -7,3 +7,11 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px
 );
+
+:root {
+  --primary: black;
+  --secondary:rgb(255, 255, 255);
+  --warning: #ffac08;
+  --success: #0dbb81;
+  --danger: #F64E60;
+}
