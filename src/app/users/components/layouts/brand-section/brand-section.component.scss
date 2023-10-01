@@ -1,0 +1,59 @@
+
+.brand-section{
+  padding: 10px 15px 10px 15px;
+  display: grid;
+  gap: .625rem;
+  position: relative;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+}
+.brand-heading{
+  display: none;
+}
+
+.brand-name{
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 20px 10px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius:2px;
+  border: 1px solid #C4C4C4;
+  cursor: pointer;
+}
+
+.brand-name:hover {
+  background-color: #F0F2F2; /* Change background color on hover (e.g., red) */
+}
+
+@media screen and (min-width:900px) {
+  .brand-section{
+    margin: 25px 15px;
+    gap: 30px;
+    border: 1px solid #C4C4C4;
+    border-radius: 2px;
+    padding: 35px 25px ;
+  }
+
+  .brand-name {
+    padding: 20px 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+  }
+  .brand-heading{
+    display: block;
+    position: absolute;
+    top: -20px;
+    background-color: white;
+    left: 44%;
+    width: 300px;
+
+    text-align: center;
+  }
+  .brand-heading h1{
+    font-family: Oswald;
+    font-weight: 200;
+  }
+}
