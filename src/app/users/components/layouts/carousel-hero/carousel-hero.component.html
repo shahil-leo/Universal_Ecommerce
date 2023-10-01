@@ -1,1 +1,8 @@
-<p>carousel-hero works!</p>
+<p-galleria class="galleriaStyle" [value]="images" [autoPlay]="
+false" [numVisible]="7"  [circular]="true" [showItemNavigators]="true" [showThumbnails]="false" [transitionInterval]=4000 [responsiveOptions]="responsiveOptions" >
+  <ng-template pTemplate="item" let-item class="image-big">
+      <img [src]="item.itemImageSrc" class="image-gallery" />
+        <h1 [style.color]="item.color" class="image-title">{{item.imageTitle}}  </h1>
+        <!-- <button class="btn">Buy Now</button> -->
+      </ng-template>
+    </p-galleria>
