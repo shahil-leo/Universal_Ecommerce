@@ -1,0 +1,91 @@
+section {
+  padding: 16px;
+}
+h1 {
+  margin-bottom: 20px;
+}
+.grid-featured {
+  display: flex;
+  gap: 1.25rem;
+  overflow: auto;
+}
+
+:host ::ng-deep .card {
+  padding: 5px !important;
+}
+
+.card_description {
+  font-size: 14px;
+  color: #7f8c9b;
+  line-height: 150%;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.price {
+  color: rgba(0, 0, 0, 0.693);
+}
+
+.buy_now {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #0077ff;
+  background-color: #e0efff;
+  display: block;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.buy_now:hover {
+  background-color: #0077ff;
+  color: #e0efff;
+}
+
+img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.card_buttons {
+  display: flex;
+  gap: 0.625rem;
+  align-items: center;
+}
+
+body {
+  background-color: #eaeff1;
+  font-family: 'Raleway', sans-serif;
+}
+
+img {
+  width: 100%;
+  border-radius: 12px;
+  height: 240px;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 350px;
+  min-width: 350px;
+}
+
+.card {
+  background-color: white;
+  padding: 5px;
+  border-radius: 12px;
+  border: 0.5px solid #bacdd898;
+  overflow: hidden;
+}
+
+.card_details {
+  padding: 16px 8px 8px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 600;
+}

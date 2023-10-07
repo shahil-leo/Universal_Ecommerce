@@ -1,9 +1,10 @@
-<section class="brand-section" >
+<section class="brand-section">
   <div class="brand-heading">
     <h1>Choose Your Brand</h1>
   </div>
-  <div  *ngFor="let brand of brandList">
-    <div class="brand-name" (click)="getBrandListProducts(brand.brandName)">{{brand.brandName}}</div>
+  <div *ngFor="let brand of brandList">
+    <div class="brand-name" (click)="getBrandListProducts(brand.brandName)">
+      {{ brand.brandName }}
+    </div>
   </div>
 </section>
-

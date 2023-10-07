@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-interface brandListModal{
-  font:string,
-  brandName:string
+interface brandListModal {
+  font: string;
+  brandName: string;
 }
 
 @Component({
@@ -14,34 +14,29 @@ interface brandListModal{
   styleUrls: ['./brand-section.component.scss']
 })
 export class BrandSectionComponent implements OnInit {
+  brandList: brandListModal[] = [];
 
-brandList:brandListModal[]=[]
-
-  constructor(){}
+  constructor() {}
 
   ngOnInit(): void {
-      this.brandList=[
-
+    this.brandList = [
       {
-        font:'',
-        brandName:'Nike'
+        font: '',
+        brandName: 'Nike'
       },
       {
-        font:'',
-        brandName:'Gucci'
+        font: '',
+        brandName: 'Gucci'
       },
       {
-        font:'',
-        brandName:'Puma'
+        font: '',
+        brandName: 'Puma'
       },
       {
-        font:'',
-        brandName:'Adidas'
-      },
-
-
-    ]
+        font: '',
+        brandName: 'Adidas'
+      }
+    ];
   }
-  getBrandListProducts(brandName:string){
-  }
+  getBrandListProducts(brandName: string) {}
 }
