@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TooltipModule } from 'primeng/tooltip';
 interface FeaturedProducts {
@@ -17,10 +17,48 @@ interface FeaturedProducts {
 })
 export class FeaturedProductsComponent implements OnInit {
   items: FeaturedProducts[] = [];
+  public widgetsContent!: ElementRef<any>;
+
   constructor() {}
 
   ngOnInit(): void {
     this.items = [
+      {
+        title: 'leomessi',
+        price: '120Rs',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+        image: '../../../../../assets/Photos/image.jpg'
+      },
+      {
+        title: 'leomessi',
+        price: '120Rs',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+        image: '../../../../../assets/Photos/image.jpg'
+      },
+      {
+        title: 'leomessi',
+        price: '120Rs',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+        image: '../../../../../assets/Photos/image.jpg'
+      },
+      {
+        title: 'leomessi',
+        price: '120Rs',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+        image: '../../../../../assets/Photos/image.jpg'
+      },
+      {
+        title: 'leomessi',
+        price: '120Rs',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+        image: '../../../../../assets/Photos/image.jpg'
+      },
+      {
+        title: 'leomessi',
+        price: '120Rs',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+        image: '../../../../../assets/Photos/image.jpg'
+      },
       {
         title: 'leomessi',
         price: '120Rs',

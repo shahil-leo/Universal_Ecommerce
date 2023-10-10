@@ -5,9 +5,18 @@ h1 {
   margin-bottom: 20px;
 }
 .grid-featured {
-  display: flex;
-  gap: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 items per row */
+  grid-gap: 10px;
   overflow: auto;
+}
+
+.grid-featured {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.grid-featured::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 :host ::ng-deep .card {
@@ -23,6 +32,12 @@ h1 {
 }
 .price {
   color: rgba(0, 0, 0, 0.693);
+}
+.left_arrow {
+  float: right;
+}
+.right_arrow {
+  float: right;
 }
 
 .buy_now {
@@ -43,7 +58,7 @@ h1 {
 }
 
 img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: transform 0.3s ease;
 }
 
@@ -88,4 +103,15 @@ img {
 .name {
   font-size: 24px;
   font-weight: 600;
+}
+
+.btn {
+  padding: 8px 15px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.903);
+  color: white;
+  font-size: 20px;
 }
